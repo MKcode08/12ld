@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="12.css">
+    <title>Vartotojo Informacija</title>
+</head>
+<body>
+    <h1>Duomenų vagystės ypatumai</h1>
+    <form id="userInfoForm">
+        <label for="firstName" id = "label">Vardas:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName" id = "label">Pavardė:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="number1" id = "label">Skaičius (1-10):</label>
+        <input type="text" id="number1" name="number1" min="1" max="10" required><br>
+
+        <label for="number2" id = "label">Kitas skaičius (1-10):</label>
+        <input type="text" id="number2" name="number2" min="1" max="10" required><br>
+
+        <button type="button" onclick="saveForm()">Išsaugoti</button>
+    </form>
+
+    <div id="resultContainer"></div>
+
+    <script src="12.js"></script>
+</body>
+</html>
